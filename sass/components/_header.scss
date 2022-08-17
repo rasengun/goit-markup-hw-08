@@ -1,0 +1,161 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+  position: fixed;
+
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: $main-background-color;
+  width: 100%;
+  height: 100vh;
+
+  padding: 48px 40px;
+  text-align: left;
+  align-items: left;
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-button.is-open {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+
+  z-index: 999;
+}
+
+.menu-button__icon {
+  fill: $main-content-text-color;
+}
+
+.menu-button__icon:hover,
+.menu-button__icon:focus {
+  fill: $accent-color;
+}
+
+.menu-button__icon-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-open {
+  display: none;
+}
+
+.menu-button.is-open .nav {
+  display: block;
+}
+
+.nav.is-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site-nav__link {
+  display: inline-flex;
+  align-items: center;
+
+  color: $main-content-text-color;
+  font-weight: 500;
+  font-size: 7vw;
+  line-height: 1.18;
+
+  padding: 0;
+  margin-bottom: 32px;
+
+  transition: color 250ms $animation-timing-function;
+}
+
+.site-nav__link--active {
+  color: $accent-color;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contacts__icon {
+  display: none;
+}
+
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+
+  color: $second-content-text-color;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  padding: 0;
+  margin-bottom: 64px;
+
+  transition: color 250ms $animation-timing-function;
+
+  .contacts__item:last-child & {
+    font-size: 7vw;
+    line-height: 1.18;
+    color: $accent-color;
+
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__item:last-child .contacts__link {
+  font-size: 7vw;
+  line-height: 1.18;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+
+.menu-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-social__item:first-child {
+  padding-left: 0;
+}
+
+.menu-social__item {
+  font-weight: 500;
+  font-size: 4vw;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__item:last-child {
+  border: none;
+}

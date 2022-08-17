@@ -1,0 +1,86 @@
+$main-background-color: #ffffff;
+$second-background-color: #2f303a;
+$third-background-color: #f5f4fa;
+$accent-color: #2196f3;
+$main-content-text-color: #212121;
+$second-content-text-color: #757575;
+$card-border-color: #eeeeee;
+$passive-icon-color: #afb1b8;
+$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// Global
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $main-background-color;
+  color: $main-content-text-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 480px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+// Visually-hidden
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
