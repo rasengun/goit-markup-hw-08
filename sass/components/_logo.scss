@@ -10,11 +10,21 @@
   &--color {
     color: #000000;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
 }
 
 .bottom-logo {
   display: inline-block;
+  text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 0px;
+    padding: 0;
+  }
 
   &--color {
     color: #ffffff;

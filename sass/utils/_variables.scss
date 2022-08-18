@@ -49,6 +49,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 480px;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      max-width: 768px;
+    }
+  }
 }
 
 .section {

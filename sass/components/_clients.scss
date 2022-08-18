@@ -10,11 +10,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: calc((100% - 2 * 30px) / 2);
+
+  @media screen and (min-width: $tablet) {
+    & {
+      width: calc((100% - 3 * 30px) / 3);
+    }
+  }
+
   height: 92px;
   border: 1px solid $passive-icon-color;
   border-radius: 4px;
-  padding: 16px 52px;
+  padding: 16px 60px;
   transition: border-color 250ms $animation-timing-function;
   margin: 15px;
 
