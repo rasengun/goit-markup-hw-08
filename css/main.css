@@ -918,6 +918,14 @@ img {
           justify-content: flex-start;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
@@ -961,13 +969,10 @@ img {
   border-width: 1px;
   border-color: #eeeeee;
 }
-
-.project:nth-child(3n) {
-  margin-right: 0;
-}
-
-.project:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .project {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .project__link {

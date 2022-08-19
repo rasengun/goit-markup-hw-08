@@ -3,6 +3,13 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  }
 }
 
 .filter__item:not(:last-child) {
