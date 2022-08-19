@@ -1,13 +1,11 @@
 .project-set {
   display: flex;
   flex-wrap: wrap;
-
-  margin: -15px;
+  gap: 30px;
 }
 
 .project {
   display: block;
-  margin: 15px;
   border-style: solid;
   border-width: 1px;
   border-color: $card-border-color;
