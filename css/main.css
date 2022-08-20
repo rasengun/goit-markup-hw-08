@@ -1160,10 +1160,10 @@ img {
 }
 
 .project {
+  margin: 15px;
   display: block;
   border-style: solid;
   border-width: 1px;
-  margin: 15px;
   border-color: #eeeeee;
 }
 @media screen and (min-width: 768px) {
