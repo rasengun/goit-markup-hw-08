@@ -39,6 +39,13 @@
   padding: 40px;
 
   transition: transform 250ms $animation-timing-function;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      width: 528px;
+      height: 581px;
+    }
+  }
 }
 
 .button--close {
