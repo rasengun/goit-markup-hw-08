@@ -55,11 +55,24 @@ img {
       max-width: 768px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      max-width: 1200px;
+    }
+  }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
 }
 
 .section__title {
@@ -69,6 +82,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .card {

@@ -1,18 +1,26 @@
 .project-set {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  // gap: 30px;
+  margin: -15px;
 }
 
 .project {
   display: block;
   border-style: solid;
   border-width: 1px;
+  margin: 15px;
   border-color: $card-border-color;
 
   @media screen and (min-width: $tablet) {
     & {
       width: calc((100% - 2 * 30px) / 2);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      width: calc((100% - 3 * 30px) / 3);
     }
   }
 }

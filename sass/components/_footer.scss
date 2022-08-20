@@ -14,19 +14,37 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      text-align: left;
+    }
+  }
 }
 
 .address__item {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      text-align: left;
+    }
   }
 }
 
 .address {
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .adress__link {
@@ -52,6 +70,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
 }
 
 .social-media__item--dark {
@@ -65,10 +90,65 @@
 
 .social-media-footer {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.social-media__link_grey {
+  color: $main-background-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      align-items: flex-start;
+      margin: 0 70px 0 0;
+    }
+  }
+}
+
+.footer__social-media {
+  margin: 0 auto 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      margin: 0 93px 0 0;
+    }
+  }
+}
+
+.footer__subscription {
+  @media screen and (min-width: $desktop) {
+    & {
+      margin-left: auto;
+    }
+  }
 }
 
 .subscription {
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 .subscription__input {
@@ -87,27 +167,13 @@
   border-radius: 4px;
 
   cursor: pointer;
-}
 
-.social-media__link_grey {
-  color: $main-background-color;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
+  @media screen and (min-width: $desktop) {
+    & {
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
-}
-
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto 0 auto;
-}
-
-.footer__social-media {
-  margin: 0 auto 0 auto;
 }
 
 .footer__information-wrapper {
@@ -117,6 +183,13 @@
       justify-content: space-between;
 
       width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      justify-content: flex-start;
+      align-items: baseline;
     }
   }
 }

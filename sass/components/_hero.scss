@@ -69,4 +69,10 @@
   line-height: 1.61;
   letter-spacing: 0.06em;
   margin: 0 auto 30px auto;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

@@ -18,6 +18,12 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      padding-bottom: 30px;
+    }
+  }
 }
 
 .team-member__name {

@@ -22,6 +22,12 @@
       width: calc((100% - 2 * 30px) / 2);
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      width: calc((100% - 4 * 30px) / 4);
+    }
+  }
 }
 
 .advantages__item--background-color {
@@ -44,6 +50,12 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      margin-right: auto;
+    }
+  }
 }
 
 .advantages__text {
