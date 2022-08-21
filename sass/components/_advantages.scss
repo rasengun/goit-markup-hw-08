@@ -13,8 +13,6 @@
 }
 
 .advantages__item {
-  display: flex;
-  flex-direction: column;
   margin: 15px;
 
   @media screen and (min-width: $tablet) {

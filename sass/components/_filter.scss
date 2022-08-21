@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
+  gap: 8px;
+  row-gap: 15px;
 
   @media screen and (min-width: $tablet) {
     & {
@@ -18,10 +20,6 @@
   }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .button--filter {
   color: $main-content-text-color;
   background-color: $third-background-color;
@@ -29,7 +27,6 @@
   line-height: 1.63;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  margin-bottom: 15px;
   box-shadow: none;
   transition: color 250ms $animation-timing-function,
     background-color 250ms $animation-timing-function, box-shadow 250ms $animation-timing-function;
