@@ -620,7 +620,7 @@ img {
 
 .advantages {
   display: block;
-  margin: -15px;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .advantages {
@@ -636,9 +636,6 @@ img {
   }
 }
 
-.advantages__item {
-  margin: 15px;
-}
 @media screen and (min-width: 768px) {
   .advantages__item {
     width: calc((100% - 60px) / 2);
@@ -677,7 +674,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .advantages__title {
-    margin-right: auto;
+    text-align: left;
   }
 }
 
@@ -1340,7 +1337,6 @@ img {
 }
 
 .form__label {
-  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1350,6 +1346,7 @@ img {
 
 .form__area {
   position: relative;
+  margin-top: 4px;
 }
 
 .form__input {
@@ -1446,7 +1443,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 400;
-  font-size: 6px;
+  font-size: 10px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1454,6 +1451,11 @@ img {
 @media screen and (min-width: 768px) {
   .policy {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
   }
 }
 
